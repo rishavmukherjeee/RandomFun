@@ -8,7 +8,7 @@ export default function App() {
 
   const fetchRandomNumber = async () => {
     try {
-      const response = await fetch('http://192.168.0.103:5000/random');
+      const response = await fetch('http://localhost:5000/random');
       if (!response.ok) {
         throw new Error('Network request failed');
       }
